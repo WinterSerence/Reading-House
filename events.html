@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活动中心 - 栖读社区书屋</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <div class="navbar-logo-icon">📖</div>
+                <span class="navbar-logo-text">栖读社区书屋</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link">首页</a>
+                <a href="space.html" class="navbar-link">空间介绍</a>
+                <a href="events.html" class="navbar-link active">活动中心</a>
+                <a href="bookswap.html" class="navbar-link">漂流书架</a>
+                <a href="checkin.html" class="navbar-link">阅读打卡</a>
+                <a href="community.html" class="navbar-link">互动墙</a>
+            </div>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题区 -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">活动中心</h1>
+            <p class="page-subtitle">
+                丰富多彩的阅读活动，遇见志同道合的书友，开启美好的阅读旅程
+            </p>
+        </div>
+    </header>
+
+    <!-- 分类筛选 -->
+    <section class="section" style="padding-top: var(--spacing-md);">
+        <div class="container">
+            <div class="filter-bar">
+                <div class="filter-tabs">
+                    <!-- 分类标签将由JS动态生成 -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 活动列表 -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="grid grid-3" id="events-list">
+                <!-- 活动卡片将由JS动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 活动说明 -->
+    <section class="section" style="background: var(--color-cream-dark);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title" style="display: inline-block;">活动说明</h2>
+                <div style="margin-top: var(--spacing-lg);">
+                    <div class="card" style="padding: var(--spacing-md); margin-bottom: var(--spacing-sm);">
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: 8px;">📋 报名须知</h3>
+                        <ul style="color: var(--text-secondary); line-height: 2;">
+                            <li>• 活动名额有限，先到先得，请提前报名预约</li>
+                            <li>• 报名成功后，请准时参加，如无法参加请提前取消</li>
+                            <li>• 部分活动可能需要自备书籍或材料，详见活动详情</li>
+                            <li>• 活动开始前15分钟请到达签到处</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="padding: var(--spacing-md); margin-bottom: var(--spacing-sm);">
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: 8px;">💡 活动类型说明</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-sm);">
+                            <div>
+                                <strong style="color: var(--color-green);">共读会</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">一起阅读经典好书，分享阅读感悟</p>
+                            </div>
+                            <div>
+                                <strong style="color: var(--color-green);">新书分享</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">新书推荐与作者见面会</p>
+                            </div>
+                            <div>
+                                <strong style="color: var(--color-green);">儿童绘本</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">专为儿童设计的绘本故事会</p>
+                            </div>
+                            <div>
+                                <strong style="color: var(--color-green);">夜读活动</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">夜晚的特别阅读活动</p>
+                            </div>
+                            <div>
+                                <strong style="color: var(--color-green);">手账工作坊</strong>
+                                <p style="color: var(--text-secondary); font-size: 0.9rem;">学习手账制作与记录技巧</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding: var(--spacing-md);">
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: 8px;">❓ 常见问题</h3>
+                        <div style="color: var(--text-secondary); line-height: 2;">
+                            <p><strong>Q: 活动收费吗？</strong></p>
+                            <p style="margin-bottom: var(--spacing-sm);">A: 大部分活动免费，部分材料费活动会在详情中说明。</p>
+
+                            <p><strong>Q: 可以带朋友一起参加吗？</strong></p>
+                            <p style="margin-bottom: var(--spacing-sm);">A: 请为每位参与者单独报名，确保活动名额充足。</p>
+
+                            <p><strong>Q: 如何取消报名？</strong></p>
+                            <p>A: 如需取消报名，请至少提前24小时联系书屋工作人员。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📍 书屋地址</h4>
+                    <p>北京市朝阳区书香路88号<br>栖读社区文化中心二楼</p>
+                </div>
+                <div class="footer-section">
+                    <h4>🕐 开放时间</h4>
+                    <p>周一至周五：09:00 - 21:00<br>周六至周日：10:00 - 22:00<br>法定节假日另行通知</p>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 联系我们</h4>
+                    <p>电话：010-8888-8888<br>邮箱：hello@qidu.com<br>微信公众号：栖读社区书屋</p>
+                </div>
+                <div class="footer-section">
+                    <h4>💡 关于栖读</h4>
+                    <p>栖读社区书屋是一个面向社区居民的公益阅读空间，致力于推广阅读文化，构建书香社区。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 栖读社区书屋 · 让阅读成为一种生活方式</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入JS文件 -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/events.js"></script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>栖读社区书屋 - 在城市的一隅，与书相遇</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <div class="navbar-logo-icon">📖</div>
+                <span class="navbar-logo-text">栖读社区书屋</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link active">首页</a>
+                <a href="space.html" class="navbar-link">空间介绍</a>
+                <a href="events.html" class="navbar-link">活动中心</a>
+                <a href="bookswap.html" class="navbar-link">漂流书架</a>
+                <a href="checkin.html" class="navbar-link">阅读打卡</a>
+                <a href="community.html" class="navbar-link">互动墙</a>
+            </div>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner 主视觉区 -->
+    <section class="hero">
+        <div class="hero-decoration hero-decoration-1">📚</div>
+        <div class="hero-decoration hero-decoration-2">🌿</div>
+        <div class="hero-content">
+            <h1 class="hero-title">在城市的一隅，与书相遇，<br>也与热爱阅读的人相遇</h1>
+            <p class="hero-subtitle">
+                一个融合阅读空间、活动共创、漂流书交换与阅读社交的社区书屋平台<br>
+                让阅读成为一种生活方式，让分享成为一种习惯
+            </p>
+            <div class="hero-buttons">
+                <a href="events.html" class="btn btn-primary">📅 查看活动</a>
+                <a href="checkin.html" class="btn btn-secondary">📝 开始打卡</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 今日开放状态 -->
+    <section class="section">
+        <div class="container">
+            <div class="status-card">
+                <div class="status-icon">🏠</div>
+                <div class="status-info">
+                    <h3>今日开放状态</h3>
+                    <p>开放时间：周一至周日 09:00 - 21:00</p>
+                </div>
+                <span class="status-badge status-open" id="open-status">营业中</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 本周活动预告 -->
+    <section class="section" style="background: var(--color-cream-dark);">
+        <div class="container">
+            <h2 class="section-title">本周活动预告</h2>
+            <p class="section-subtitle">精选本周即将举行的阅读活动，期待你的参与</p>
+            <div class="grid grid-3" id="home-events">
+                <!-- 活动卡片将由JS动态生成 -->
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="events.html" class="btn btn-secondary">查看全部活动 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 热门漂流书 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">热门漂流书</h2>
+            <p class="section-subtitle">让书籍在社区中流动，让知识传递温暖</p>
+            <div class="grid grid-4" id="home-books">
+                <!-- 漂流书卡片将由JS动态生成 -->
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="bookswap.html" class="btn btn-secondary">查看更多书籍 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 今日留言精选 -->
+    <section class="section" style="background: linear-gradient(135deg, var(--color-green-pale), var(--color-cream));">
+        <div class="container">
+            <h2 class="section-title">今日留言精选</h2>
+            <p class="section-subtitle">来自阅读者的声音，温暖而真诚</p>
+            <div class="grid grid-3" id="home-posts">
+                <!-- 留言卡片将由JS动态生成 -->
+            </div>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="community.html" class="btn btn-secondary">进入互动墙 →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 栖读理念 -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="display: inline-block;">关于栖读</h2>
+                <div style="margin-top: var(--spacing-lg); line-height: 2; color: var(--text-secondary);">
+                    <p style="font-size: 1.1rem; margin-bottom: var(--spacing-md);">
+                        <strong style="color: var(--color-brown-dark);">栖读</strong>，取"栖息"与"阅读"之意。
+                    </p>
+                    <p>
+                        我们希望在城市喧嚣中，为爱书人提供一处安静的栖息之所。<br>
+                        这里不只是借阅书籍的空间，更是思想交流的平台、心灵休憩的港湾。
+                    </p>
+                    <p style="margin-top: var(--spacing-md);">
+                        每一本书都值得被阅读，每一个想法都值得被分享。<br>
+                        在栖读，我们相信阅读的力量，也珍视每一次相遇。
+                    </p>
+                </div>
+                <div style="display: flex; justify-content: center; gap: var(--spacing-lg); margin-top: var(--spacing-lg); flex-wrap: wrap;">
+                    <div class="stats-card" style="min-width: 150px;">
+                        <div class="stats-icon">📚</div>
+                        <div class="stats-number">2000+</div>
+                        <div class="stats-label">馆藏书籍</div>
+                    </div>
+                    <div class="stats-card" style="min-width: 150px;">
+                        <div class="stats-icon">👥</div>
+                        <div class="stats-number">500+</div>
+                        <div class="stats-label">注册会员</div>
+                    </div>
+                    <div class="stats-card" style="min-width: 150px;">
+                        <div class="stats-icon">📅</div>
+                        <div class="stats-number">100+</div>
+                        <div class="stats-label">举办活动</div>
+                    </div>
+                    <div class="stats-card" style="min-width: 150px;">
+                        <div class="stats-icon">🔄</div>
+                        <div class="stats-number">300+</div>
+                        <div class="stats-label">漂流图书</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📍 书屋地址</h4>
+                    <p>北京市朝阳区书香路88号<br>栖读社区文化中心二楼</p>
+                </div>
+                <div class="footer-section">
+                    <h4>🕐 开放时间</h4>
+                    <p>周一至周五：09:00 - 21:00<br>周六至周日：10:00 - 22:00<br>法定节假日另行通知</p>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 联系我们</h4>
+                    <p>电话：010-8888-8888<br>邮箱：hello@qidu.com<br>微信公众号：栖读社区书屋</p>
+                </div>
+                <div class="footer-section">
+                    <h4>💡 关于栖读</h4>
+                    <p>栖读社区书屋是一个面向社区居民的公益阅读空间，致力于推广阅读文化，构建书香社区。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 栖读社区书屋 · 让阅读成为一种生活方式</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入JS文件 -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // 首页特定功能
+        document.addEventListener('DOMContentLoaded', function() {
+            renderHomeEvents();
+            renderHomeBooks();
+            renderHomePosts();
+            updateOpenStatus();
+        });
+
+        // 渲染首页活动卡片
+        function renderHomeEvents() {
+            const container = document.getElementById('home-events');
+            if (!container) return;
+
+            const events = getEvents();
+            // 获取最近的3个未满员活动
+            const upcomingEvents = events
+                .filter(e => new Date(e.date) >= new Date())
+                .sort((a, b) => new Date(a.date) - new Date(b.date))
+                .slice(0, 3);
+
+            container.innerHTML = upcomingEvents.map(event => createEventCard(event)).join('');
+
+            // 绑定报名按钮
+            container.querySelectorAll('.event-register-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const eventId = parseInt(this.dataset.id);
+                    const result = registerEvent(eventId);
+                    if (result.success) {
+                        showToast(result.message, 'success');
+                        renderHomeEvents();
+                    } else {
+                        showToast(result.message, 'error');
+                    }
+                });
+            });
+        }
+
+        // 渲染首页漂流书卡片
+        function renderHomeBooks() {
+            const container = document.getElementById('home-books');
+            if (!container) return;
+
+            const books = getBooks();
+            // 获取4本可交换的书
+            const availableBooks = books
+                .filter(b => b.status === 'available')
+                .slice(0, 4);
+
+            container.innerHTML = availableBooks.map(book => createBookCard(book)).join('');
+
+            // 绑定交换按钮
+            container.querySelectorAll('.book-swap-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const bookId = parseInt(this.dataset.id);
+                    const result = exchangeBook(bookId);
+                    if (result.success) {
+                        showToast(result.message, 'success');
+                        renderHomeBooks();
+                    } else {
+                        showToast(result.message, 'error');
+                    }
+                });
+            });
+        }
+
+        // 渲染首页留言卡片
+        function renderHomePosts() {
+            const container = document.getElementById('home-posts');
+            if (!container) return;
+
+            const posts = getPosts();
+            // 获取最新的3条
+            const recentPosts = posts.slice(0, 3);
+
+            container.innerHTML = recentPosts.map(post => createPostCard(post)).join('');
+
+            // 绑定点赞按钮
+            container.querySelectorAll('.like-btn').forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const postId = parseInt(this.dataset.id);
+                    const newLikes = likePost(postId);
+                    this.querySelector('.like-count').textContent = newLikes;
+                    this.classList.add('liked');
+                });
+            });
+        }
+
+        // 更新开放状态
+        function updateOpenStatus() {
+            const statusEl = document.getElementById('open-status');
+            if (!statusEl) return;
+
+            const now = new Date();
+            const hour = now.getHours();
+            const day = now.getDay(); // 0是周日
+
+            let isOpen = false;
+            let statusText = '已闭馆';
+
+            // 周一至周五 9:00-21:00
+            if (day >= 1 && day <= 5) {
+                if (hour >= 9 && hour < 21) {
+                    isOpen = true;
+                    statusText = '营业中';
+                } else if (hour >= 21) {
+                    statusText = '今日已闭馆';
+                } else {
+                    statusText = '即将开放';
+                }
+            }
+            // 周六日 10:00-22:00
+            else {
+                if (hour >= 10 && hour < 22) {
+                    isOpen = true;
+                    statusText = '营业中';
+                } else if (hour >= 22) {
+                    statusText = '今日已闭馆';
+                } else {
+                    statusText = '即将开放';
+                }
+            }
+
+            statusEl.textContent = statusText;
+            statusEl.className = isOpen ? 'status-badge status-open' : 'status-badge status-closed';
+        }
+    </script>
+</body>
+</html>

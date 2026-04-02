@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>空间介绍 - 栖读社区书屋</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <div class="navbar-logo-icon">📖</div>
+                <span class="navbar-logo-text">栖读社区书屋</span>
+            </a>
+            <div class="navbar-menu">
+                <a href="index.html" class="navbar-link">首页</a>
+                <a href="space.html" class="navbar-link active">空间介绍</a>
+                <a href="events.html" class="navbar-link">活动中心</a>
+                <a href="bookswap.html" class="navbar-link">漂流书架</a>
+                <a href="checkin.html" class="navbar-link">阅读打卡</a>
+                <a href="community.html" class="navbar-link">互动墙</a>
+            </div>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题区 -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="page-title">书屋空间</h1>
+            <p class="page-subtitle">
+                精心设计的阅读空间，让每一次阅读都成为一段美好的旅程
+            </p>
+        </div>
+    </header>
+
+    <!-- 书屋理念 -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h2 class="section-title" style="display: inline-block;">栖读理念</h2>
+                <div style="margin-top: var(--spacing-lg); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--spacing-md);">
+                    <div class="card" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-xs);">🌱</div>
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: 8px;">社区共享</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            书籍共享、空间共享、知识共享<br>让资源流动起来
+                        </p>
+                    </div>
+                    <div class="card" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-xs);">🤝</div>
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: 8px;">阅读陪伴</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            不是孤独的阅读<br>而是有人陪伴的成长
+                        </p>
+                    </div>
+                    <div class="card" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-xs);">☕</div>
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: 8px;">慢生活</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            在快节奏的城市中<br>找回阅读的慢时光
+                        </p>
+                    </div>
+                    <div class="card" style="padding: var(--spacing-md); text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-xs);">💭</div>
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: 8px;">知识交流</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">
+                            分享观点，碰撞思想<br>让阅读更有深度
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 空间区域展示 -->
+    <section class="section" style="background: var(--color-cream-dark);">
+        <div class="container">
+            <h2 class="section-title">功能区域</h2>
+            <p class="section-subtitle">五大功能区域，满足不同阅读需求</p>
+            <div class="grid grid-3" id="space-list">
+                <!-- 空间卡片将由JS动态生成 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 详细介绍 -->
+    <section class="section">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h2 class="section-title" style="display: inline-block;">空间详情</h2>
+
+                <!-- 安静阅读区 -->
+                <div class="card" style="margin-top: var(--spacing-lg); overflow: hidden;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+                        <div style="height: 300px; background: linear-gradient(135deg, var(--color-wood-light), var(--color-green-pale)); display: flex; align-items: center; justify-content: center; font-size: 6rem;">
+                            📚
+                        </div>
+                        <div style="padding: var(--spacing-md);">
+                            <h3 style="font-size: 1.5rem; color: var(--color-brown-dark); margin-bottom: var(--spacing-sm);">
+                                安静阅读区
+                            </h3>
+                            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: var(--spacing-sm);">
+                                这里是栖读的核心区域，配备舒适的阅读座椅、柔和的灯光和充足的插座。
+                                整个区域保持安静，让读者能够完全沉浸在书籍的世界中。
+                            </p>
+                            <ul style="color: var(--text-secondary); line-height: 2;">
+                                <li>• 可容纳30人同时阅读</li>
+                                <li>• 配备个人阅读灯和插座</li>
+                                <li>• 全天候保持安静</li>
+                                <li>• 提供毛毯和靠垫</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 交流讨论区 -->
+                <div class="card" style="margin-top: var(--spacing-md); overflow: hidden;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+                        <div style="padding: var(--spacing-md);">
+                            <h3 style="font-size: 1.5rem; color: var(--color-brown-dark); margin-bottom: var(--spacing-sm);">
+                                交流讨论区
+                            </h3>
+                            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: var(--spacing-sm);">
+                                这里是思想碰撞的地方，适合小组讨论、读书会活动和读书分享。
+                                我们提供白板、投影仪等设备，支持多种形式的交流活动。
+                            </p>
+                            <ul style="color: var(--text-secondary); line-height: 2;">
+                                <li>• 可容纳20人小组讨论</li>
+                                <li>• 配备投影仪和白板</li>
+                                <li>• 支持预约使用</li>
+                                <li>• 适合举办读书会</li>
+                            </ul>
+                        </div>
+                        <div style="height: 300px; background: linear-gradient(135deg, var(--color-green-pale), var(--color-wood-light)); display: flex; align-items: center; justify-content: center; font-size: 6rem;">
+                            💬
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 儿童共读角 -->
+                <div class="card" style="margin-top: var(--spacing-md); overflow: hidden;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0;">
+                        <div style="height: 300px; background: linear-gradient(135deg, #FFF3E0, #E8F5E9); display: flex; align-items: center; justify-content: center; font-size: 6rem;">
+                            🧸
+                        </div>
+                        <div style="padding: var(--spacing-md);">
+                            <h3 style="font-size: 1.5rem; color: var(--color-brown-dark); margin-bottom: var(--spacing-sm);">
+                                儿童共读角
+                            </h3>
+                            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: var(--spacing-sm);">
+                                专为孩子们设计的阅读空间，有丰富的绘本和儿童读物。
+                                柔软的地垫、可爱的书架，让孩子在快乐中爱上阅读。
+                            </p>
+                            <ul style="color: var(--text-secondary); line-height: 2;">
+                                <li>• 500+册精选绘本</li>
+                                <li>• 安全环保的装修材料</li>
+                                <li>• 定期举办故事会</li>
+                                <li>• 亲子共读友好空间</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 开放时间与到访提示 -->
+    <section class="section" style="background: var(--color-green-pale);">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 class="section-title" style="display: inline-block;">到访指南</h2>
+
+                <div class="grid grid-2" style="margin-top: var(--spacing-lg);">
+                    <div class="card" style="padding: var(--spacing-md);">
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">🕐</span> 开放时间
+                        </h3>
+                        <ul style="color: var(--text-secondary); line-height: 2.2;">
+                            <li><strong>周一至周五</strong>：09:00 - 21:00</li>
+                            <li><strong>周六至周日</strong>：10:00 - 22:00</li>
+                            <li><strong>法定节假日</strong>：另行通知</li>
+                            <li><strong>每月第一个周一</strong>：闭馆整理</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" style="padding: var(--spacing-md);">
+                        <h3 style="color: var(--color-brown-dark); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 10px;">
+                            <span style="font-size: 1.5rem;">📋</span> 阅读公约
+                        </h3>
+                        <ul style="color: var(--text-secondary); line-height: 2.2;">
+                            <li>• 请保持安静，勿大声喧哗</li>
+                            <li>• 爱护书籍，阅读后请归位</li>
+                            <li>• 请勿在书屋内饮食</li>
+                            <li>• 手机请调至静音模式</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: var(--spacing-md); margin-top: var(--spacing-md);">
+                    <h3 style="color: var(--color-brown-dark); margin-bottom: var(--spacing-sm); display: flex; align-items: center; gap: 10px;">
+                        <span style="font-size: 1.5rem;">💡</span> 温馨提示
+                    </h3>
+                    <div style="color: var(--text-secondary); line-height: 2;">
+                        <p>• 活动报名请提前通过<a href="events.html" style="color: var(--color-green);">活动中心</a>页面进行预约</p>
+                        <p>• 漂流书交换请先在<a href="bookswap.html" style="color: var(--color-green);">漂流书架</a>登记</p>
+                        <p>• 团体参观请提前致电预约：010-8888-8888</p>
+                        <p>• 如有任何问题，欢迎咨询前台工作人员</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>📍 书屋地址</h4>
+                    <p>北京市朝阳区书香路88号<br>栖读社区文化中心二楼</p>
+                </div>
+                <div class="footer-section">
+                    <h4>🕐 开放时间</h4>
+                    <p>周一至周五：09:00 - 21:00<br>周六至周日：10:00 - 22:00<br>法定节假日另行通知</p>
+                </div>
+                <div class="footer-section">
+                    <h4>📞 联系我们</h4>
+                    <p>电话：010-8888-8888<br>邮箱：hello@qidu.com<br>微信公众号：栖读社区书屋</p>
+                </div>
+                <div class="footer-section">
+                    <h4>💡 关于栖读</h4>
+                    <p>栖读社区书屋是一个面向社区居民的公益阅读空间，致力于推广阅读文化，构建书香社区。</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 栖读社区书屋 · 让阅读成为一种生活方式</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入JS文件 -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // 空间页面特定功能
+        document.addEventListener('DOMContentLoaded', function() {
+            renderSpaceList();
+        });
+
+        // 渲染空间列表
+        function renderSpaceList() {
+            const container = document.getElementById('space-list');
+            if (!container) return;
+
+            const spaces = [
+                {
+                    name: '安静阅读区',
+                    icon: '📚',
+                    description: '静谧的阅读空间，舒适的座椅，柔和的灯光，让你完全沉浸在书籍的世界中。',
+                    capacity: '30人',
+                    activities: '独立阅读、自习'
+                },
+                {
+                    name: '交流讨论区',
+                    icon: '💬',
+                    description: '思想碰撞的空间，适合小组讨论、读书会活动和读书分享，配备投影和白板。',
+                    capacity: '20人',
+                    activities: '读书会、小组讨论'
+                },
+                {
+                    name: '儿童共读角',
+                    icon: '🧸',
+                    description: '专为孩子们设计的阅读空间，有丰富的绘本和儿童读物，让孩子在快乐中爱上阅读。',
+                    capacity: '15组家庭',
+                    activities: '绘本阅读、亲子共读'
+                },
+                {
+                    name: '漂流书架区',
+                    icon: '📖',
+                    description: '书籍在社区中流动的地方，你可以带走一本书，也可以留下一本书，让知识传递。',
+                    capacity: '不限',
+                    activities: '图书交换、漂流'
+                },
+                {
+                    name: '咖啡休闲区',
+                    icon: '☕',
+                    description: '轻松的休息空间，提供咖啡和茶饮，适合放松聊天，或者在阅读间隙小憩。',
+                    capacity: '12人',
+                    activities: '休息、轻声交谈'
+                }
+            ];
+
+            container.innerHTML = spaces.map(space => createSpaceCard(space)).join('');
+        }
+    </script>
+
+    <style>
+        /* 空间页面特定样式 */
+        @media (max-width: 768px) {
+            .card > div[style*="grid-template-columns"] {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</body>
+</html>
